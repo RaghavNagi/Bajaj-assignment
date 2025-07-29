@@ -78,6 +78,7 @@ public class StartupTask implements CommandLineRunner {
                 System.out.println("SQL answer submitted successfully!");
             } else {
                 System.err.println("Submission failed: " + response.getStatusCode());
+
                 System.err.println("Response body: " + response.getBody());
             }
         } catch (HttpClientErrorException e) {
